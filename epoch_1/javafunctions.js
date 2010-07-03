@@ -1,4 +1,3 @@
-
 function sel()
 {
 	if(!document.forms[selmess])
@@ -73,15 +72,4 @@ function UpdateTimer(){
 	temp = temp+sec;
 	document.getElementById("idSec").innerHTML=temp;
 
-}
-function gm(i){
-	if(window.addFriend){
-		var ajax=new Ajax.Request('/gm.php',
-		{
-			method:'get',
-			parameters:{
-				'i':i
-			}
-		});
-	}
 }
