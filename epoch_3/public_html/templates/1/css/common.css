@@ -1,0 +1,463 @@
+
+/***
+
+    World War II MMORPG
+    Copyright (C) 2009 Richard Eames
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+***/
+
+/* 
+	Theme based upon 
+		- Russian Offensive by Epigone @ clantemplates.com
+		- onderhood.bom
+		- awesome buttons from ZURB
+*/
+html {
+	background-color: #000;
+}
+
+body {
+	background-color: #000;
+	padding: 0;
+	margin: 0;
+	color: #A0A0A0;
+	font-size: 13px;
+	font-weight: normal;
+ 	/*font-family: "Verdana",  "Helvetica", "Arial", sans-serif;*/
+ 	font-family: sans-serif;
+ 	line-height: normal;
+	
+}
+a {
+	text-decoration: none;
+	cursor: pointer;	
+	/*font-weight: bold;*/
+}
+
+a:link, 
+a:visited, 
+a:active {
+	/*color: #9B0;*/
+	/*color: #BE0;*/
+	/*color: #C8EA4E;*/
+	color: #BBC64F;
+}
+
+a:hover {
+	color: #FFF;
+}
+
+a.selected {
+	color: #667D00;
+}
+
+h1 {
+	font-size: 16px;
+}
+
+h2 {
+	font-size: 14px;
+}
+
+li.primary {
+	color: red;
+}
+
+#left-menu li a.unread {
+	color: red;
+}
+
+td.username-underline {
+	padding-bottom: 4px;
+}
+
+td.username-underline a {
+	border-bottom: 3px double red;
+}
+
+td.username-underline-similar a {
+	border-bottom: 3px double green;
+}
+
+td.username-underline-double a {
+	border-bottom: 3px double orange;
+}
+
+td.username-underline-high a {
+	border-bottom: 3px double red;
+}
+
+td.username-underline-inactive a {
+	border-bottom: 3px double gray;
+}
+
+input, textarea {
+	background-color: #222;
+	border: 1px solid #4C4C4C;
+	color: #CCC;
+	font-size: 12px;
+	border-collapse: collapse;
+	padding: 2px;
+	font-family: Verdana
+}
+
+.clear {
+	clear: both;
+}
+.flat {
+	height: 0;
+	line-height: 0;
+}
+.left { float: left; }
+.right { float: right; }
+
+
+#main-container {
+	width: 850px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+#main-top-nav {
+	height: 60px;
+	margin: 8px 18px 12px;
+	position: relative;
+}
+
+#logo {
+	width: 256px;
+	height: 60px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#top-ad {
+	width: 300px;
+	height: 60px;
+	position:absolute;
+	top: 0;
+	left: 256px;
+}
+
+#adbright-1 {
+	width: 519px;
+	height: 50px;
+	padding: 0 5px;
+	margin-left: 15px
+}
+
+#logo img {
+	border: none 0;
+	height: 60px;
+	width: 256px;
+} 
+
+#nav-icons {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+
+#nav-icons a,
+#main-content-footer a {
+	color: #4C4C4C;
+}
+
+
+#nav-icons a:hover,
+#main-content-footer a:hover {
+	color: #CCC;
+}
+
+#copyright {
+	text-align: center;
+	padding: 10px 0;
+}
+
+#main-content-panel {
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	
+	
+	background-color: #292929;
+	padding: 15px;
+}
+
+#main-content-footer {
+	padding: 15px 0;
+}
+
+#main-content-panel .layer2 {
+	background-color: #4C4C4C;
+	padding: 10px 25px;
+}
+
+#main-content-panel .layer3 {
+	background-color: #333;
+	padding: 10px 25px;
+}
+
+#main-content-panel .layer3 a {
+	color: #C90;
+	font-weight: bold;
+}
+
+#main-content-panel .layer3 a:hover {
+	color: #FFF;
+}
+
+#main-content-panel .layer3 li {
+	border-bottom: dotted #444 2px;
+	padding: 3px 0;
+}
+
+#left-panel {
+	width: 260px;
+	float:left;
+}	
+
+#main-error-bar {
+	color : #F00;
+	margin: 0 0 10px 15px;
+	font-weight: bold;
+	text-align: center;
+	width: 495px;
+	float:left;
+}
+
+#main-msg-bar {
+	color: #0A0;
+	margin: 0 0 10px 15px;
+	font-weight: bold;
+	text-align: center;
+	width: 495px;
+	float:left;
+}
+
+#main-announce-bar {
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	
+	margin-bottom: 15px;
+}
+
+#main-content-panel div#main-left-container {
+	padding-bottom: 40px;
+}
+
+#main-left-container ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	
+}
+
+ul#common-menu-items {
+	padding: 15px 0;
+}
+
+#main-content-panel div#login-form ul li {
+	border: 0;
+	padding: 0
+}
+
+#newest-member {
+	text-align: center;
+	padding: 5px 0;
+}
+
+#page-content {
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+
+	margin: 0 0 0 15px;
+	padding: 0 5px 5px;
+ 	width: 533px;
+	border: 1px dotted #4C4C4C;
+	float:left;
+}
+
+div.panel {
+	width: 100%;
+}
+div.panel .panel-title {
+	text-align:center;
+	font-size: 15px;
+	font-weight: bold;
+	border: 1px #444 solid;
+	background-color: #333;
+	color: #AACCFF;
+	padding : 5px 0;
+	margin: 5px 0;
+	
+}
+
+div.panel .panel-title .no-hl {
+	font-weight: normal;
+	color:inherit;
+}
+
+/* New tableless */
+
+table.large td {
+	text-align:center;
+}
+
+div.panel .large {
+	width: 523px;
+	margin: 0;
+	padding: 0;
+}
+
+div.panel .large div.line {
+	clear: left;
+	display:block;
+	width:523px;
+	margin: 5px 0 0;
+	padding: 1px 2px;
+	
+	border-bottom: dotted 1px #444;
+	padding: 2px 0
+	
+	zoom:1;
+}
+
+div.line small {
+	display:block;
+	margin: 0 0 5px 0;
+	padding: 1px 5px;
+	font-size: 88%;
+	
+	zoom:1;
+}
+
+div.line label {
+	display: block;
+	float:left;
+	width: 130px;
+	padding: 5px;
+	margin: 0 0 5px;
+	text-align:right;
+}
+
+div.line span {
+	padding: 5px;
+	display:block;
+	margin-left: 138px;
+}
+
+div.line input,
+div.line select {
+	padding: 2px;
+	margin:0 0 5px 3px;
+}
+
+div.line textarea {
+	width: 373px;
+}
+
+div.line p.info {
+	display:block;
+	padding: 5px 5px 5px 100px;;
+	clear: left;
+}
+
+div.line input.submit  {
+	margin-left:143px;
+	margin-bottom: 5px;
+}
+
+div.line fieldset {
+	border: 1px solid #AAAAAA;
+	clear:none;
+	margin-left: 138px;
+	padding: 0 5px 5px;
+}
+
+div.line fieldset label {
+	float: none;
+	text-align: left;
+	width: 360px;
+}
+
+div.line fieldset label input {
+	margin: 0;
+}
+
+div.line .right-section {
+	margin-left: 148px;
+	display:block;
+}
+
+div.line .right-section input {
+	margin: 0 0 5px 0;
+}
+
+div.line .right-section label {
+	margin:0;
+	padding-left:0;
+	display: inline;
+	float:none;
+}
+
+
+
+/* Old tabled style */
+div.panel table {
+	width: 100%;
+	margin:0;
+}
+
+div.panel tr td:first-child,
+div.panel tr td:nth-child(3),
+div.panel tr td:last-child {
+	text-align:center;
+}
+
+div.panel tr td:first-child {
+	-moz-border-radius-topleft: 5px;
+	-webkit-border-top-left-radius: 5px;
+	
+	-moz-border-radius-bottomleft: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+}
+div.panel tr td:last-child {
+	-moz-border-radius-topright: 5px;
+	-webkit-border-top-right-radius: 5px;
+	
+	-moz-border-radius-bottomright: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+}
+
+div.panel tr td:nth-child(2) {
+	padding-left : 3px;
+}
+
+div.panel td {
+	border-bottom: dotted 1px #444;
+	padding: 2px 0
+}
+
+table.odd-even tr:nth-child(even) td {
+	background-color: #2F2F2F;
+}
+
+.email-help {
+	border: 1px solid #444;
+	padding: 5px;
+}

@@ -1,0 +1,71 @@
+/***
+
+    World War II MMORPG
+    Copyright (C) 2009 Richard Eames
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+***/
+.unread a {
+	font-weight: bold;
+}
+
+div#message-text {
+	padding: 5px 0 10px;
+	width: 523px;
+	/*overflow: scroll;*/
+	margin-bottom: 10px;
+	
+}
+
+#message-delete {
+	position: absolute;
+	right: 0px;
+	top: 0;
+}
+
+
+div pre {
+	font-family: "Times New Roman", Halvetica, sans-serif;
+	font-size: 16px;
+	width:523px;
+}
+
+/* Message */
+
+div.message-date {
+/*	border-bottom: 1px solid #545454;*/
+	padding: 5px;
+	/*margin-bottom: 10px;*/
+	position:relative;
+}
+
+div.message-from-box {
+	border-bottom: 1px solid #545454;
+	padding: 5px;
+	margin-bottom: 10px;
+	position:relative;
+}
+
+span.quote-title {
+	font-weight:bold;
+}
+
+div.quote {
+	border: 1px solid #545454;
+	background-color:#303030;
+	font-style:italic;
+	padding: 5px;
+	margin-bottom: 20px;
+}
