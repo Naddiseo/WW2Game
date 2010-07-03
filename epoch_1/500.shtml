@@ -1,0 +1,9 @@
+<html>
+<head>
+<title>500 Internal Server Error</title>
+<link href="css/main.css" rel="StyleSheet" type="text/css" />
+</head>
+<body>
+It looks like someone is fiddling with the server configuration and broke it! Please retry your query in a few minutes; these errors usually don't take long to fix. 
+</body>
+</html>

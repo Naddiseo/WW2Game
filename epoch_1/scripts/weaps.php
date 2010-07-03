@@ -1,0 +1,29 @@
+<?
+$conf['weapon0strength'] = '50';
+$conf['weapon0pp'] = '5';
+$conf['weapon0price'] = '5000';
+$conf['weapon1strength'] = '100';
+$conf['weapon1pp'] = '5';
+$conf['weapon1price'] = '9000';
+$conf['weapon2strength'] = '250';
+$conf['weapon2pp'] = '5';
+$conf['weapon2price'] = '20000';
+$conf['weapon3strength'] = '500';
+$conf['weapon3pp'] = '4';
+$conf['weapon3price'] = '35000';
+$conf['weapon4strength'] = '1500';
+$conf['weapon4pp'] = '4';
+$conf['weapon4price'] = '100000';
+$conf['weapon5strength'] = '3000';
+$conf['weapon5pp'] = '4';
+$conf['weapon5price'] = '174000';
+$conf['weapon6strength'] = '6000';
+$conf['weapon6pp'] = '4';
+$conf['weapon6price'] = '300000';
+$conf['weapon7strength'] = '8000';
+$conf['weapon7pp'] = '3';
+$conf['weapon7price'] = '360000';
+$conf['weapon8strength'] = '10000';
+$conf['weapon8pp'] = '2';
+$conf['weapon8price'] = '400000';
+?>

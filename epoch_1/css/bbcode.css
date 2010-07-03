@@ -1,0 +1,41 @@
+	/*	no editing above this line unless you know what you are doing!	*/
+
+
+
+/*	simple [code]code[/code] span */
+.code {
+	font-family: ProFontWindows, monaco, "Lucida Console", "Courier New", Courier, monospace;
+	font-size: 95%; 
+	color: #A07A47;
+	}
+
+code { /* you may prefer to style <code> tags differently */
+	font-family: ProFontWindows, monaco, "Lucida Console", "Courier New", Courier, monospace;
+	color: #A07A47;
+	}
+	
+	quote2 { /* you may prefer to style <code> tags differently */
+	font-family: ProFontWindows, monaco, "Lucida Console", "Courier New", Courier, monospace;
+	color: #A07A47;
+	}
+
+/*	[coderz]code[/coderz]	*/
+.quote	{
+	margin: 0px 0px 7px 0px;
+	width: 95%;
+	font-family: ProFontWindows, monaco, "Lucida Console", "Courier New", Courier, monospace;
+	color: #FFFFFF;
+	font-size: 90%;
+	background-color: #666666;
+	border: #999999;
+	border-style: solid;
+	border-left-width: 1px;
+	border-top-width: 1px;
+	border-right-width: 2px;
+	border-bottom-width: 2px;
+	padding: 7px;
+	
+	
+	}
+
+

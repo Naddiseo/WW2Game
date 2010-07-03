@@ -1,0 +1,36 @@
+The is the "World War II" MMORPG source code.
+This repository contains most of the code written over the last 5 years,
+which amounts to 100s of programming hours.
+
+The code has been split up into 3 sections designated by the 'Epoch' that each
+code base was run.
+
+Epoch 1 was built around the KoC clone script that was floating around the
+internet in 2005. This ran between 2005 and 2007.
+
+Epoch 2 is an extension built on Epoch 1, but was under different 
+administration at the time. The ran between 2007 and 2009.
+
+Epoch 3 is more-or-less a complete rewrite from the ground up, but keeping
+most of the game play aspects from the earlier epochs. This was created in
+the spring of 2009.
+
+THE CODE
+
+Because the code for epoch 1 and 2 are based upon the KoC clone script, the
+code itself is very messy, and ugly. Epoch 3 is much cleaner, but is still
+mostly undocumented.
+
+SETUP
+
+Epoch 1 and 2 are tricky to set up. One would need to grep for the email
+addresses and program names. There is limited configuration in the config.php
+file, and the paths to the directories should be set there.
+
+Epoch 3 offers much better configuration.
+
+RUNNING
+
+All 3 epochs should work in lighttpd, apache servers. The code requires PHP5,
+(although Epoch 1 might run on PHP4). The database dumps are MySQL5, but should
+work on MySQL4
