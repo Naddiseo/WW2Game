@@ -1,12 +1,6 @@
 <html>
  <head><title>HTTP 404 Not Found</title></head>
- <!--<frameset rows="1,*" cols="100%" frameborder=0 border=0 framespacing=0>
-  <frame name="TOP" src="http://www.searchfeed.com/rd/Blank.html" marginheight=0 noresize>
-  <frame name="CENTER" src="http://www.searchfeed.com/rd/404/404.jsp?p=47850&trackID=N4412105084" marginwidth=0 marginheight=0 marginheight=1 marginwidth=10 scrolling="Auto">
- </frameset>
-
-Rolz: I'm not having ads on my 404 pages >.<
--->
+ 
 The requested URL was not found.
 
 </html>  
