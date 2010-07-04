@@ -29,13 +29,11 @@ require_once('SpyLog.php');
 class User extends BaseClass {
 	public
 		$id = 0,
-		$ww3Id = 0,
 		$username = 'None',
 		$nation = 0,
 		$email = '',
 		$password = '',
 		$key = '',
-		$passwdstrength = '',
 		$gclick = 15,
 		$commander = 0,
 		$active = 0,
@@ -77,8 +75,6 @@ class User extends BaseClass {
 		$officerup = 0,
 		$changenick = 0,
 		$admin = 0,
-		$bot  = 0,
-		$vote = 0,
 		$clicks = 0,
 		$supporter = 0,
 		$reason = '',
@@ -86,11 +82,8 @@ class User extends BaseClass {
 		$bankimg = 1,
 		$cheatcount = 0,
 		$status = '',
-		$donatorgold = 0,
 		$numofficers = 0,
-		$offline = 0,
 		$irc = 0,
-		$savings = 0,
 		$ircstatus = '',
 		$ircnick = '',
 		$currentIP = '',
@@ -98,8 +91,6 @@ class User extends BaseClass {
 		$msgCount  = 0,
 		$aaccepted = 0,
 		$referrer = 0,
-		$treasuryAttack = 0,
-		$donatorType = 0,
 		$ircpass = '',
 		$minattack = 0,
 		$htmlColour = '';
@@ -114,16 +105,6 @@ class User extends BaseClass {
 		$id  = intval($id);
 		
 		$r   = mysql_query("SELECT * FROM User WHERE id='$id' and `key`=\"$k\" limit 1") or die(mysql_error());
-		$obj = mysql_fetch_object($r, 'User');
-		return $obj;
-	}
-
-	public function
-	getByFBId($fbId) {
-
-		$id  = intval($fbId);
-		
-		$r   = mysql_query("SELECT * FROM User WHERE fbid='$id' limit 1") or die(mysql_error());
 		$obj = mysql_fetch_object($r, 'User');
 		return $obj;
 	}
@@ -906,7 +887,7 @@ class User extends BaseClass {
 		$username = mysql_real_escape_string($username);
 		$email    = mysql_real_escape_string($email);
 		$ip       = mysql_real_escape_string($ip);
-		//die("SELECT * FROM User WHERE username LIKE \"$username\" $oa email LIKE \"$email\" $oa currentip LIKE \"$ip\" ORDER BY id asc");
+		
 		$q = mysql_query("SELECT * FROM User WHERE username LIKE \"$username\" $oa email LIKE \"$email\" $oa currentip LIKE \"$ip\" ORDER BY id asc") or die(mysql_error());
 		while ($r = mysql_fetch_object($q, 'User')) {
 			$ret[] = $r;
