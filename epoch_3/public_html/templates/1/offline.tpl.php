@@ -48,6 +48,11 @@ if ($d) {
 	}
 }
 
+// FIX for issue #1 : if not set, then make it 24 hours from now
+if ($starttime <= 0) {
+	$starttime = time() + (24 * 60 * 60);
+}
+
 ?>
 -->
 <div id="offline-container">

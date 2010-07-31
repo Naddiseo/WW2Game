@@ -37,16 +37,16 @@ if ($nextage > $c) {
 $starttime = str_replace('@', '', $_START_TIME[$nextage]);
 $endtime   = str_replace('@', '', $_END_TIME[$nextage]);
 
-if (time() > $starttime) {
+# FIX for issue #1 : make sure there is a time for next age
+if ($_START_TIME[$nextage] > 0 and time() > $starttime) {
 	// it's time to start
 
-	
+
 	if (updateAgefiles($nextage)) {
 		header('Location: index.php?t=1');
 		exit;
 	}
 }
-
 
 
 $t->offline = true;
