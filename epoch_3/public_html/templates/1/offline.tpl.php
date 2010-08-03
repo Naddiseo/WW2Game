@@ -1,4 +1,3 @@
-
 <!--
 
     World War II MMORPG
@@ -49,7 +48,7 @@ if ($d) {
 }
 
 // FIX for issue #1 : if not set, then make it 24 hours from now
-if ($starttime <= 0) {
+if (!isset($_START_TIME[$nextage])) {
 	$starttime = time() + (24 * 60 * 60);
 }
 
