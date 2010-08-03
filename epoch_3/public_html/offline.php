@@ -38,7 +38,7 @@ $starttime = str_replace('@', '', $_START_TIME[$nextage]);
 $endtime   = str_replace('@', '', $_END_TIME[$nextage]);
 
 # FIX for issue #1 : make sure there is a time for next age
-if ($_START_TIME[$nextage] > 0 and time() > $starttime) {
+if (isset($_START_TIME[$nextage]) and time() > $starttime) {
 	// it's time to start
 
 
