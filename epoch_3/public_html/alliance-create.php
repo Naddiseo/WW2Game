@@ -3,7 +3,7 @@
 /***
 
     World War II MMORPG
-    Copyright (C) 2009 Richard Eames
+    Copyright (C) 2009-2010 Richard Eames
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by

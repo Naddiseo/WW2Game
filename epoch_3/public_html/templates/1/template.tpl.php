@@ -7,7 +7,7 @@
 <!--
 
     World War II MMORPG
-    Copyright (C) 2009 Richard Eames
+    Copyright (C) 2009-2010 Richard Eames
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -199,8 +199,6 @@
 
 			<!-- Start of Footer panel -->
 			<div id="main-content-footer">
-<!--				<div><? global $MSQL_NUM_QUERIES; echo $MSQL_NUM_QUERIES ?> queries</div>-->
-<!--				<div class="left">&copy;2005-2009</div>-->
 				<div class="right">
 					<a href="spam.php">Report Spam</a>&nbsp;|
 					<a href="privacy.php">Privacy Policy</a>&nbsp;|
@@ -210,7 +208,7 @@
 				</div>
 				<div class="clear flat"></div>
 				<div id="copyright">
-					All Epoch 3 coding by Naddiseo<br />
+					<a href="http://www.http://github.com/Naddiseo/WW2Game" target="_blank" >Epoch 3</a>under GNU/GPL3, coding by Naddiseo<br />
 					Rolz14 (IRC Service)<br />
 					Epoch 1 design by SilentWarrior and Xamir<br />
 					<i>Copyright  2005-2010<br/>
