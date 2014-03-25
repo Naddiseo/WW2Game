@@ -51,7 +51,7 @@ CREATE TABLE IF NOT EXISTS `Activation` (
   `time` int(10) NOT NULL,
   PRIMARY KEY  (`id`),
   KEY `userName` (`username`,`password`)
-) TYPE=MyISAM ;
+) ENGINE=MyISAM ;
 
 -- --------------------------------------------------------
 
@@ -86,7 +86,7 @@ CREATE TABLE IF NOT EXISTS `Alliance` (
   `news` text NOT NULL,
   PRIMARY KEY  (`id`),
   KEY `password` (`password`)
-) TYPE=MyISAM ;
+) ENGINE=MyISAM ;
 
 -- --------------------------------------------------------
 
@@ -101,7 +101,7 @@ CREATE TABLE IF NOT EXISTS `AllianceBan` (
   `date` int(11) NOT NULL,
   PRIMARY KEY  (`id`),
   KEY `allianceId` (`allianceId`,`targetId`)
-) TYPE=MyISAM ;
+) ENGINE=MyISAM ;
 
 -- --------------------------------------------------------
 
@@ -118,7 +118,7 @@ CREATE TABLE IF NOT EXISTS `AllianceShout` (
   PRIMARY KEY  (`id`),
   KEY `allianceId` (`allianceId`),
   KEY `date` (`date`)
-) TYPE=MyISAM;
+) ENGINE=MyISAM;
 
 -- --------------------------------------------------------
 
@@ -168,7 +168,7 @@ CREATE TABLE IF NOT EXISTS `BattleLog` (
   KEY `attackerId` (`attackerId`),
   KEY `targetId` (`targetId`),
   KEY `time` (`time`)
-) TYPE=MyISAM ;
+) ENGINE=MyISAM ;
 
 -- --------------------------------------------------------
 
@@ -186,7 +186,7 @@ CREATE TABLE IF NOT EXISTS `Contact` (
   `reference` int(11) NOT NULL,
   `replied` int(11) NOT NULL,
   PRIMARY KEY  (`id`)
-) TYPE=MyISAM  ;
+) ENGINE=MyISAM  ;
 
 -- --------------------------------------------------------
 
@@ -202,7 +202,7 @@ CREATE TABLE IF NOT EXISTS `Ignore` (
   `time` int(11) NOT NULL,
   PRIMARY KEY  (`id`),
   UNIQUE KEY `userId` (`userId`,`targetId`)
-) TYPE=MyISAM ;
+) ENGINE=MyISAM ;
 
 -- --------------------------------------------------------
 
@@ -220,7 +220,7 @@ CREATE TABLE IF NOT EXISTS `IP` (
   KEY `userID` (`uid`),
   KEY `time` (`time`),
   KEY `IP_2` (`IP`,`uid`)
-) TYPE=InnoDB  PACK_KEYS=0  ;
+) ENGINE=InnoDB  PACK_KEYS=0  ;
 
 -- --------------------------------------------------------
 
@@ -241,7 +241,7 @@ CREATE TABLE IF NOT EXISTS `Mercenaries` (
   `avgra` bigint(15) NOT NULL default '0',
   `avgca` bigint(15) NOT NULL default '0',
   `avghit` int(11) NOT NULL default '0'
-) TYPE=MyISAM;
+) ENGINE=MyISAM;
 
 -- 
 -- Add the single needed row, all values set to default except turntime
@@ -271,7 +271,7 @@ CREATE TABLE IF NOT EXISTS `Message` (
   KEY `age` (`age`),
   FULLTEXT KEY `subject` (`subject`),
   FULLTEXT KEY `text` (`text`)
-) TYPE=MyISAM  PACK_KEYS=0 ;
+) ENGINE=MyISAM  PACK_KEYS=0 ;
 
 -- --------------------------------------------------------
 
@@ -288,7 +288,7 @@ CREATE TABLE IF NOT EXISTS `Report` (
   `info` varchar(160) NOT NULL COMMENT 'reason why the suspect was reported.',
   PRIMARY KEY  (`id`),
   KEY `userId` (`userId`,`targetId`)
-) TYPE=MyISAM ;
+) ENGINE=MyISAM ;
 
 -- --------------------------------------------------------
 
@@ -338,7 +338,7 @@ CREATE TABLE IF NOT EXISTS `SpyLog` (
   KEY `userID` (`attackerId`),
   KEY `toUserID` (`targetId`),
   KEY `time` (`time`)
-) TYPE=MyISAM  PACK_KEYS=1 ;
+) ENGINE=MyISAM  PACK_KEYS=1 ;
 
 -- --------------------------------------------------------
 
@@ -416,7 +416,7 @@ CREATE TABLE IF NOT EXISTS `Transaction` (
   `errorInfo` text NOT NULL,
   PRIMARY KEY  (`id`),
   KEY `token` (`token`)
-) TYPE=MyISAM ;
+) ENGINE=MyISAM ;
 
 -- --------------------------------------------------------
 
@@ -499,7 +499,7 @@ CREATE TABLE IF NOT EXISTS `User` (
   KEY `rank` (`rank`),
   KEY `area` (`area`),
   KEY `key` (`key`)
-) TYPE=MyISAM  PACK_KEYS=0  ;
+) ENGINE=MyISAM  PACK_KEYS=0  ;
 
 -- --------------------------------------------------------
 
@@ -516,4 +516,4 @@ CREATE TABLE IF NOT EXISTS `Weapon` (
   `userId` int(11) NOT NULL default '0',
   PRIMARY KEY  (`id`),
   KEY `userID` (`userId`)
-) TYPE=MyISAM  PACK_KEYS=0 ;
+) ENGINE=MyISAM  PACK_KEYS=0 ;
